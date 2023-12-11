@@ -8,19 +8,13 @@ const setupAndStartServer=()=>{
     app.use(bodyParser.urlencoded({extended:true}));
     app.listen(PORT,()=>{
         console.log("Server started at PORT",PORT);
-        sendBasicEmail(
-            'support@admin.com',
+        sendBasicEmail  (
+            'support@gmail.com',
             'nikhil.chhajer80@gmail.com',
             'This is testing email',
             'Hey,how are you,i hope you like the support'
         );
-
     });
-    // sendBasicEmail(
-    //     'support@admin.com',
-    //     'movie.mela80@gmail.com',
-    //     'This is testing email',
-    //     'Hey,how are you,i hope you like the support'
-    // );
+  
 }
 setupAndStartServer();
